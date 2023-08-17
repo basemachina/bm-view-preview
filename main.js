@@ -1,7 +1,7 @@
 const { chromium } = require("playwright");
 const { watch } = require("./watch");
 
-const watcher = watch('./view.js');
+const watcher = watch("./view.js");
 
 (async () => {
   const browser = await chromium.launchPersistentContext("./user_data", {
@@ -17,9 +17,11 @@ const watcher = watch('./view.js');
 
       const { value } = await watcher.next();
       await page.evaluate((value) => {
-        const editor = monaco.editor.getEditors()[0];
-        editor.setValue(value);
-      }, value)
+        const editor = monaco?.editor?.getEditors()?.[0];
+        if (editor) {
+          editor.setValue(value);
+        }
+      }, value);
     }
   });
 })();
