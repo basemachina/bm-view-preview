@@ -1,5 +1,6 @@
 const { chromium } = require("playwright");
 const { watch } = require("./watch");
+const { ViewPage } = require("./viewPage");
 
 const watcher = watch("./view.js");
 
@@ -13,15 +14,8 @@ const watcher = watch("./view.js");
   page.on("load", async () => {
     const url = new URL(page.url());
     if (url.pathname.includes("/views/new")) {
-      console.log("connected");
-
-      const { value } = await watcher.next();
-      await page.evaluate((value) => {
-        const editor = monaco?.editor?.getEditors()?.[0];
-        if (editor) {
-          editor.setValue(value);
-        }
-      }, value);
+      console.log("connecting");
+      ViewPage.connect(page, watcher);
     }
   });
 })();
