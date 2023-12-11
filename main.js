@@ -1,8 +1,14 @@
+const { argv, exit } = require("node:process");
 const { chromium } = require("playwright");
 const { watch } = require("./watch");
 const { ViewPage } = require("./viewPage");
 
-const watcher = watch("./view.js");
+const viewSourceFilePath = argv[2];
+if (!viewSourceFilePath) {
+  console.error("view source file path is not given.");
+  exit(1);
+}
+const watcher = watch(viewSourceFilePath);
 
 (async () => {
   const browser = await chromium.launchPersistentContext("./user_data", {
