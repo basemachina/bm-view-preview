@@ -17,7 +17,8 @@ const watcher = watch(viewSourceFilePath);
   });
   const page = (await browser.pages())[0];
 
-  // TODO: loadイベントではrouterによるページ遷移を拾えないので別方法にする
+  // NOTE: loadイベントではrouterによるページ遷移を拾えない
+  // TOOD: ViewPage.connect()が成功したあとに別ページに遷移したらdisconnect()できるようにする
   page.on("load", async () => {
     const url = new URL(page.url());
     if (url.pathname.includes("/views/new")) {
