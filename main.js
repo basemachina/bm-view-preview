@@ -13,6 +13,7 @@ const watcher = watch(viewSourceFilePath);
 (async () => {
   const browser = await chromium.launchPersistentContext("./user_data", {
     headless: false,
+    viewport: null, // ウィンドウのリサイズに合わせてviewportのサイズを変える
   });
   const page = (await browser.pages())[0];
 
