@@ -10,16 +10,23 @@ class ViewPage {
   }
 
   async start() {
-    const updateViewCode = (code) => {
-      const editor = monaco?.editor?.getEditors()?.[0];
-      if (editor) {
-        editor.setValue(code);
+    // monacoがロードされるまで待つ
+    await this.page.waitForFunction(
+      () => window.monaco?.editor?.getEditors()?.[0],
+      null,
+      {
+        polling: 100, // 100ms
+        timeout: 5000, // 5000ms
       }
-    };
+    );
 
+    // ファイルが変更されるたびにmonacoに入力する
     for (;;) {
       const { value } = await this.watcher.next();
-      await this.page.evaluate(updateViewCode, value);
+      await this.page.evaluate((code) => {
+        const editor = window.monaco.editor.getEditors()[0];
+        editor.setValue(code);
+      }, value);
     }
   }
 }
