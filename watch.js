@@ -9,6 +9,10 @@ async function* watch(filePath) {
     if (event.eventType !== "change") {
       continue;
     }
+
+    // 即座にファイルを読み込むと空になっていることがあるので少し待つ
+    await new Promise((resolve) => setTimeout(resolve, 100));
+
     yield read();
   }
 }
