@@ -5,7 +5,7 @@ const { ViewPage } = require("./viewPage");
 
 const viewSourceFilePath = argv[2];
 if (!viewSourceFilePath) {
-  console.error("view source file path is not given.");
+  console.error("ビューのソースファイルを指定してください");
   exit(1);
 }
 const watcher = watch(viewSourceFilePath);
