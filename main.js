@@ -15,6 +15,9 @@ const watcher = watch(viewSourceFilePath);
     headless: false,
     viewport: null, // ウィンドウのリサイズに合わせてviewportのサイズを変える
   });
+  console.log(
+    "最初のタブでビューの新規作成ページを開いてからリロードしてください"
+  );
 
   // とりあえず最初のタブだけ監視対象にしている
   const page = (await browser.pages())[0];
