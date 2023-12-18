@@ -15,6 +15,8 @@ const watcher = watch(viewSourceFilePath);
     headless: false,
     viewport: null, // ウィンドウのリサイズに合わせてviewportのサイズを変える
   });
+
+  // とりあえず最初のタブだけ監視対象にしている
   const page = (await browser.pages())[0];
 
   // NOTE: loadイベントではrouterによるページ遷移を拾えない
