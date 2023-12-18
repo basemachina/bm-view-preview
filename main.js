@@ -24,8 +24,8 @@ const watcher = watch(viewSourceFilePath);
   page.on("load", async () => {
     const url = new URL(page.url());
     if (url.pathname.includes("/views/new")) {
-      console.log("connecting");
       ViewPage.connect(page, watcher);
+      console.log(`ビューのエディタに接続しました (url: ${url})`);
     }
   });
 })();
