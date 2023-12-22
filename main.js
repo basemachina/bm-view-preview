@@ -22,6 +22,9 @@ const watcher = watch(viewSourceFilePath);
   // とりあえず最初のタブだけ監視対象にしている
   const page = (await browser.pages())[0];
 
+  // alert, confirmなどを自動で閉じないようにする
+  page.on("dialog", () => {});
+
   // NOTE: loadイベントではrouterによるページ遷移を拾えない
   // TOOD: ViewPage.connect()が成功したあとに別ページに遷移したらdisconnect()できるようにする
   page.on("load", async () => {
