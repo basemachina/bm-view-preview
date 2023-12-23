@@ -1,5 +1,7 @@
 import process from "node:process";
+import path from "node:path";
 import { chromium } from "playwright";
+import { xdgCache } from "xdg-basedir";
 import { watch } from "./watch.js";
 import { ViewPage } from "./viewPage.js";
 
@@ -11,10 +13,13 @@ if (!viewSourceFilePath) {
 const watcher = watch(viewSourceFilePath);
 
 (async () => {
-  const browser = await chromium.launchPersistentContext("./user_data", {
-    headless: false,
-    viewport: null, // ウィンドウのリサイズに合わせてviewportのサイズを変える
-  });
+  const browser = await chromium.launchPersistentContext(
+    path.join(xdgCache, "bmview-preview", "chromium_profile"),
+    {
+      headless: false,
+      viewport: null, // ウィンドウのリサイズに合わせてviewportのサイズを変える
+    }
+  );
   console.log(
     "最初のタブでビューの新規作成ページを開いてからリロードしてください"
   );

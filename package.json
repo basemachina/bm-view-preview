@@ -8,7 +8,8 @@
   },
   "private": true,
   "dependencies": {
-    "playwright": "^1.37.0"
-  }
+    "playwright": "^1.37.0",
+    "xdg-basedir": "^5.1.0"
+  },
   "type": "module"
 }
