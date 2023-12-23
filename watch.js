@@ -1,7 +1,7 @@
-const fs = require("node:fs/promises");
+import fs from "node:fs/promises";
 
 /** ファイルが変更されるごとにファイルの内容を返すAsyncGenerator */
-async function* watch(filePath) {
+export async function* watch(filePath) {
   const read = () => fs.readFile(filePath, { encoding: "utf8" });
 
   // 初回は更新されなくても内容を読んで返す
@@ -19,7 +19,3 @@ async function* watch(filePath) {
     yield read();
   }
 }
-
-module.exports = {
-  watch,
-};

@@ -10,4 +10,5 @@
   "dependencies": {
     "playwright": "^1.37.0"
   }
+  "type": "module"
 }

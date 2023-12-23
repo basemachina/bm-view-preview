@@ -1,4 +1,4 @@
-class ViewPage {
+export class ViewPage {
   constructor(page, watcher) {
     this.page = page;
     this.watcher = watcher;
@@ -30,7 +30,3 @@ class ViewPage {
     }
   }
 }
-
-module.exports = {
-  ViewPage,
-};

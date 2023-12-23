@@ -1,12 +1,12 @@
-const { argv, exit } = require("node:process");
-const { chromium } = require("playwright");
-const { watch } = require("./watch");
-const { ViewPage } = require("./viewPage");
+import process from "node:process";
+import { chromium } from "playwright";
+import { watch } from "./watch.js";
+import { ViewPage } from "./viewPage.js";
 
-const viewSourceFilePath = argv[2];
+const viewSourceFilePath = process.argv[2];
 if (!viewSourceFilePath) {
   console.error("ビューのソースファイルを指定してください");
-  exit(1);
+  process.exit(1);
 }
 const watcher = watch(viewSourceFilePath);
 
