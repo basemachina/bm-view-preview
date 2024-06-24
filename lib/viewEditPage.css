@@ -1,0 +1,22 @@
+/* プレビュー領域以外を隠す */
+/* パンくずリスト */
+#scroll-area > div.px-4.py-4.border-b.w-full,
+/* ページタイトルヘッダー */
+#scroll-area > div.px-8.py-4 > div.flex.flex-col.x-auto,
+/* 編集フォーム */
+#scroll-area > div.px-8.py-4 > div.pb-8 > div > form {
+  display: none;
+}
+
+/* 要素を隠すと高さが確保できなくなるので調整する */
+#scroll-area > div.px-8.py-4,
+#scroll-area > div.px-8.py-4 > div.pb-8,
+#scroll-area > div.px-8.py-4 > div.pb-8 > div,
+#scroll-area > div.px-8.py-4 > div.pb-8 > div > div {
+  height: 100%;
+}
+
+/* ビューの周囲のpaddingを表示ページと同様にする */
+#scroll-area > div.px-8.py-4 {
+  padding: 0;
+}
