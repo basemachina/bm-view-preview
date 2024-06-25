@@ -11,7 +11,7 @@ $ npm install
 ## 使い方
 
 ```
-$ node bin/bmview-preview {your_view_file.js} --url "https://{your_tenant}.basemachina.com/projects/{your_project_id}/environments/{your_environment_id}/views/new"
+$ node bin/bmview-preview {your_view_file.js} --baseUrl "https://{your_tenant}.basemachina.com/projects/{your_project_id}/environments/{your_environment_id}"
 ```
 
 起動すると新しいプロファイルのChromeが開きます。
