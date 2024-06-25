@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { parseOptions } from "../lib/parseOptions.js";
+import { getOptions } from "../lib/getOptions.js";
 import { run } from "../lib/run.js";
 
-const options = parseOptions(process.argv.slice(2));
+const options = getOptions(process.argv.slice(2));
 run(options);
