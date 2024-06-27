@@ -20,3 +20,12 @@
 #scroll-area > div.px-8.py-4 {
   padding: 0;
 }
+
+/* ファイル選択UIを画面横に配置する */
+html {
+  display: flex;
+  flex-direction: row-reverse;
+}
+body {
+  flex-grow: 1;
+}
