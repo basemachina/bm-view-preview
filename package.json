@@ -1,5 +1,5 @@
 {
-  "name": "bmview-live",
+  "name": "@basemachina/bmview-preview",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
