@@ -5,7 +5,7 @@
 ## インストール
 
 ```
-$ npm install
+$ pnpm install
 ```
 
 ## 使い方
