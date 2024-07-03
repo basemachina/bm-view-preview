@@ -13,7 +13,7 @@
 
 #### 設定ファイルの作り方
 
-以下のように`bm-view-preview.config.json`というファイルを作成してください。
+以下のように`bm-view-preview.config.json`を作成してください。
 
 ```
 $ cat > bm-view-preview.config.json
