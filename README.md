@@ -10,6 +10,8 @@
 1. `package.json`を作成する
 1. `npm install --save-dev @basemachina/bm-view-preview`を実行する
 1. 設定ファイルを作成する
+1. `npm install --save-dev playwright`を実行する
+1. `npx playwright install chromium`を実行する
 
 #### 設定ファイルの作り方
 
