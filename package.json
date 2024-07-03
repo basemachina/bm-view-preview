@@ -2,12 +2,8 @@
   "name": "@basemachina/bm-view-preview",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "bin": {
     "bm-view-preview": "./bin/bm-view-preview"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "cosmiconfig": "^9.0.0",
