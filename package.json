@@ -14,5 +14,6 @@
     "playwright": "^1.37.0",
     "xdg-basedir": "^5.1.0"
   },
-  "type": "module"
+  "type": "module",
+  "license": "BSD-3-Clause"
 }
