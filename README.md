@@ -1,4 +1,4 @@
-# bmview-preview
+# bm-view-preview
 
 ローカル環境のファイルの更新を検知して、ベースマキナのビュー機能のコードエディタに自動で反映するツールです。
 
@@ -12,10 +12,10 @@ $ npm install
 
 ### 初期設定
 
-以下のように`bmview-preview.config.json`というファイルを作成してください。
+以下のように`bm-view-preview.config.json`というファイルを作成してください。
 
 ```
-$ cat > bmview-preview.config.json
+$ cat > bm-view-preview.config.json
 {
   "baseUrl": "https://{your_tenant}.basemachina.com/projects/{your_project_id}/environments/{your_environment_id}",
   "sourceDir": "./dist"
@@ -28,7 +28,7 @@ $ cat > bmview-preview.config.json
 ### 起動
 
 ```
-$ node bin/bmview-preview
+$ node bin/bm-view-preview
 ```
 
 起動すると新しいプロファイルのChromeが開きます。
@@ -39,5 +39,5 @@ $ node bin/bmview-preview
 ## Chromeのプロファイルを削除する
 
 ```
-rm -r ~/.cache/bmview-preview/chromium_profile
+rm -r ~/.cache/bm-view-preview/chromium_profile
 ```
