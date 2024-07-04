@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@playwright/browser-chromium':
+        specifier: ^1.45.1
+        version: 1.45.1
       cosmiconfig:
         specifier: ^9.0.0
         version: 9.0.0
@@ -31,6 +34,10 @@ packages:
   '@babel/highlight@7.24.7':
     resolution: {integrity: sha512-EStJpq4OuY8xYfhGVXngigBJRWxftKX9ksiGDnmlY3o7B/V7KIAc9X4oiK87uPJSc/vs5L869bem5fhZa8caZw==}
     engines: {node: '>=6.9.0'}
+
+  '@playwright/browser-chromium@1.45.1':
+    resolution: {integrity: sha512-Jcix36xOagtda46bfn0CcdnygrcFT7FfwLhF1Y8JkHZTKPgfiku695+F0+CWabL4sU9nBG8sT5l7dmgkMgAJgw==}
+    engines: {node: '>=18'}
 
   ansi-styles@3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
@@ -113,6 +120,11 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
+  playwright-core@1.45.1:
+    resolution: {integrity: sha512-LF4CUUtrUu2TCpDw4mcrAIuYrEjVDfT1cHbJMfwnE2+1b8PZcFzPNgvZCvq2JfQ4aTjRCCHw5EJ2tmr2NSzdPg==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   playwright@1.37.0:
     resolution: {integrity: sha512-CrAEFfVioamMwDKmygc/HAkzEAxYAwjD+zod2poTxM7ObivkoDsKHu1ned16fnQV/Tf1kDB8KtsyH8Qd3VzJIg==}
     engines: {node: '>=16'}
@@ -145,6 +157,10 @@ snapshots:
       chalk: 2.4.2
       js-tokens: 4.0.0
       picocolors: 1.0.1
+
+  '@playwright/browser-chromium@1.45.1':
+    dependencies:
+      playwright-core: 1.45.1
 
   ansi-styles@3.2.1:
     dependencies:
@@ -214,6 +230,8 @@ snapshots:
   picocolors@1.0.1: {}
 
   playwright-core@1.37.0: {}
+
+  playwright-core@1.45.1: {}
 
   playwright@1.37.0:
     dependencies:
