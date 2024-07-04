@@ -15,8 +15,8 @@ importers:
         specifier: ^9.0.0
         version: 9.0.0
       playwright:
-        specifier: ^1.37.0
-        version: 1.37.0
+        specifier: ^1.45.1
+        version: 1.45.1
       xdg-basedir:
         specifier: ^5.1.0
         version: 5.1.0
@@ -80,6 +80,11 @@ packages:
     resolution: {integrity: sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==}
     engines: {node: '>=0.8.0'}
 
+  fsevents@2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+
   has-flag@3.0.0:
     resolution: {integrity: sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw==}
     engines: {node: '>=4'}
@@ -115,19 +120,14 @@ packages:
   picocolors@1.0.1:
     resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
 
-  playwright-core@1.37.0:
-    resolution: {integrity: sha512-1c46jhTH/myQw6sesrcuHVtLoSNfJv8Pfy9t3rs6subY7kARv0HRw5PpyfPYPpPtQvBOmgbE6K+qgYUpj81LAA==}
-    engines: {node: '>=16'}
-    hasBin: true
-
   playwright-core@1.45.1:
     resolution: {integrity: sha512-LF4CUUtrUu2TCpDw4mcrAIuYrEjVDfT1cHbJMfwnE2+1b8PZcFzPNgvZCvq2JfQ4aTjRCCHw5EJ2tmr2NSzdPg==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.37.0:
-    resolution: {integrity: sha512-CrAEFfVioamMwDKmygc/HAkzEAxYAwjD+zod2poTxM7ObivkoDsKHu1ned16fnQV/Tf1kDB8KtsyH8Qd3VzJIg==}
-    engines: {node: '>=16'}
+  playwright@1.45.1:
+    resolution: {integrity: sha512-Hjrgae4kpSQBr98nhCj3IScxVeVUixqj+5oyif8TdIn2opTCPEzqAqNMeK42i3cWDCVu9MI+ZsGWw+gVR4ISBg==}
+    engines: {node: '>=18'}
     hasBin: true
 
   resolve-from@4.0.0:
@@ -197,6 +197,9 @@ snapshots:
 
   escape-string-regexp@1.0.5: {}
 
+  fsevents@2.3.2:
+    optional: true
+
   has-flag@3.0.0: {}
 
   import-fresh@3.3.0:
@@ -229,13 +232,13 @@ snapshots:
 
   picocolors@1.0.1: {}
 
-  playwright-core@1.37.0: {}
-
   playwright-core@1.45.1: {}
 
-  playwright@1.37.0:
+  playwright@1.45.1:
     dependencies:
-      playwright-core: 1.37.0
+      playwright-core: 1.45.1
+    optionalDependencies:
+      fsevents: 2.3.2
 
   resolve-from@4.0.0: {}
 
