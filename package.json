@@ -3,7 +3,7 @@
   "version": "0.0.4",
   "description": "ローカル環境のJSXファイルをベースマキナのビューとしてプレビュー表示するツール",
   "bin": {
-    "bm-view-preview": "./bin/bm-view-preview"
+    "bm-view-preview": "./bin/bm-view-preview.js"
   },
   "dependencies": {
     "@playwright/browser-chromium": "^1.45.1",
