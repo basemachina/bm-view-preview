@@ -5,6 +5,9 @@
   "bin": {
     "bm-view-preview": "./bin/bm-view-preview.js"
   },
+  "scripts": {
+    "test": "vitest"
+  },
   "dependencies": {
     "@playwright/browser-chromium": "^1.45.1",
     "cosmiconfig": "^9.0.0",
@@ -17,5 +20,8 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.5"
   }
 }
