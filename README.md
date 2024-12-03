@@ -24,8 +24,7 @@ macOSおよびLinux (Ubuntu)のNode.js v20での動作を確認しています�
   "baseUrl": "https://{your_tenant}.basemachina.com/projects/{your_project_id}/environments/{your_environment_id}",
   "sourceDir": "./dist",
   "allowedEnvironments": [
-      '許可する環境ID',
-      '許可する環境ID',
+    "許可する環境ID",
   ]
 }
 ```
