@@ -19,14 +19,12 @@ macOSおよびLinux (Ubuntu)のNode.js v20での動作を確認しています�
 
 以下のように`bm-view-preview.config.json`を作成してください。
 
-```
-$ cat > bm-view-preview.config.json
+```json
 {
   "baseUrl": "https://{your_tenant}.basemachina.com/projects/{your_project_id}/environments/{your_environment_id}",
   "sourceDir": "./dist",
   "allowedEnvironments": [
-      '許可する環境ID',
-      '許可する環境ID',
+    "許可する環境ID",
   ]
 }
 ```
