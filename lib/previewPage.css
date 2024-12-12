@@ -2,7 +2,7 @@
 /* パンくずリスト */
 #scroll-area > div.px-4.py-4.border-b.w-full,
 /* ページタイトルヘッダー */
-#scroll-area > div.px-8.py-4 > div.flex.flex-col.x-auto,
+#scroll-area > div.px-8.py-4 > div.breadcrumbs-page-layout-header,
 /* 編集フォーム */
 #scroll-area > div.px-8.py-4 > div.pb-8 > div > form {
   display: none;
