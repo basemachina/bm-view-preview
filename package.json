@@ -6,6 +6,7 @@
     "bm-view-preview": "./bin/bm-view-preview.js"
   },
   "scripts": {
+    "format": "prettier . --write",
     "test": "vitest"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
     "access": "public"
   },
   "devDependencies": {
+    "prettier": "^3.4.2",
     "vitest": "^2.1.5"
   }
 }
