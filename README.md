@@ -6,7 +6,7 @@
 
 ### 動作確認環境
 
-macOSおよびLinux (Ubuntu)のNode.js v20での動作を確認しています。
+macOSおよびLinux (Ubuntu)のNode.js v22での動作を確認しています。
 
 ### インストール
 
