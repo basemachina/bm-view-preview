@@ -9,6 +9,9 @@
     "format": "prettier . --write",
     "test": "vitest"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "@playwright/browser-chromium": "^1.45.1",
     "cosmiconfig": "^9.0.0",
