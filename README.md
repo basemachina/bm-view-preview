@@ -48,3 +48,4 @@ $ npx bm-view-preview
 - 依存パッケージのインストール: `pnpm install`
 - 起動: `node bin/bm-view-preview`
 - テスト: `pnpm test`
+- ソースコードのフォーマット: `pnpm format`
