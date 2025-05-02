@@ -1,6 +1,6 @@
 {
   "name": "@basemachina/bm-view-preview",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "ローカル環境のJSXファイルをベースマキナのビューとしてプレビュー表示するツール",
   "bin": {
     "bm-view-preview": "./bin/bm-view-preview.js"
