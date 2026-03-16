@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@playwright/browser-chromium':
-        specifier: ^1.52.0
-        version: 1.52.0
+        specifier: ^1.58.2
+        version: 1.58.2
       cosmiconfig:
         specifier: ^9.0.0
         version: 9.0.0
@@ -18,8 +18,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       playwright:
-        specifier: ^1.52.0
-        version: 1.52.0
+        specifier: ^1.58.2
+        version: 1.58.2
     devDependencies:
       prettier:
         specifier: ^3.4.2
@@ -183,8 +183,8 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
-  '@playwright/browser-chromium@1.52.0':
-    resolution: {integrity: sha512-n2/e2Q0dFACFg/1JZ0t2IYLorDdno6q1QwKnNbPICHwCkAtW7+fSMqCvJ9FSMWSyPugxZqIFhownSpyATxtiTw==}
+  '@playwright/browser-chromium@1.58.2':
+    resolution: {integrity: sha512-/HHFVVP2pzEtqBVOFRoWlDtBoO8bzIWOqS62APdm3OhYbE2+kVUs/ALpkevvAKKfY0DMDVezYN22bDBh77UQ9Q==}
     engines: {node: '>=18'}
 
   '@rollup/rollup-android-arm-eabi@4.26.0':
@@ -467,13 +467,13 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
-  playwright-core@1.52.0:
-    resolution: {integrity: sha512-l2osTgLXSMeuLZOML9qYODUQoPPnUsKsb5/P6LJ2e6uPKXUdPK5WYhN4z03G+YNbWmGDY4YENauNu4ZKczreHg==}
+  playwright-core@1.58.2:
+    resolution: {integrity: sha512-yZkEtftgwS8CsfYo7nm0KE8jsvm6i/PTgVtB8DL726wNf6H2IMsDuxCpJj59KDaxCtSnrWan2AeDqM7JBaultg==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.52.0:
-    resolution: {integrity: sha512-JAwMNMBlxJ2oD1kce4KPtMkDeKGHQstdpFPcPH3maElAXon/QZeTvtsfXmTMRyO9TslfoYOXkSsvao2nE1ilTw==}
+  playwright@1.58.2:
+    resolution: {integrity: sha512-vA30H8Nvkq/cPBnNw4Q8TWz1EJyqgpuinBcHET0YVJVFldr8JDNiU9LaWAE1KqSkRYazuaBhTpB5ZzShOezQ6A==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -683,9 +683,9 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
-  '@playwright/browser-chromium@1.52.0':
+  '@playwright/browser-chromium@1.58.2':
     dependencies:
-      playwright-core: 1.52.0
+      playwright-core: 1.58.2
 
   '@rollup/rollup-android-arm-eabi@4.26.0':
     optional: true
@@ -928,11 +928,11 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  playwright-core@1.52.0: {}
+  playwright-core@1.58.2: {}
 
-  playwright@1.52.0:
+  playwright@1.58.2:
     dependencies:
-      playwright-core: 1.52.0
+      playwright-core: 1.58.2
     optionalDependencies:
       fsevents: 2.3.2
 
