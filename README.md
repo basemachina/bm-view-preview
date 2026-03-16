@@ -29,6 +29,7 @@ Node.js v22 (macOS) での動作を確認しています。
 - `baseUrl`: ビュー機能のプレビューを実行する環境のURLを指定してください。
 - `sourceDir`: プレビューするファイルのあるディレクトリのパスを指定してください。設定ファイルからの相対パスが使えます。
 - `allowExtensions`: （オプショナル）Chrome拡張のインストールを許可する場合、`true`を指定してください。デフォルト値は`false`です。
+- `launchOptions`: （オプショナル）Chromiumの起動オプションを指定できます。Playwrightの[launchPersistentContext](https://playwright.dev/docs/api/class-browsertype#browser-type-launch-persistent-context)のオプションがそのまま使えます。例: `{"channel": "chrome"}`
 
 ### 起動方法
 
